@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Agência de Ônibus</title>
+
+        <link rel="stylesheet" href="estilo.css"/>
+
+    </head>
+    <body>
+        <header id="cabecalho">
+            <h1 class="titulo">Agência de Ônibus</h1>
+        </header>
+
+
+        
+        <div class="blocoform">
+            <h2>Abertura de Chamados</h2>
+            <form action="javascript:alert('Solicitação enviada :D')" id="form2" name="cadastro" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="Nome" value="Nome do funcionário"/> <br/>
+                <label for="assunto">Assunto:</label>
+                <input type="text" id="assunto" name="Assunto" value="Chamado para..."/> <br/>
+                <label for="categoria">Categoria:</label>
+                <select id="categoria" name="Categoria">
+                    <option value="admin">Administrativa</option>
+                    <option value="gerencia">Gerencial</option>
+                    <option value="op">Operacional</option>
+                </select> <br/>
+                <label for="desc">Descrição:</label> <br/>
+                <textarea id="desc" form="form2" name="Descrição" rows="4" cols="30">Detalhe o chamado</textarea> <br/>
+
+                <input type="submit" name="Cadastrar"/>
+                <input type="reset" name="Limpar"/>
+            </form>
+        </div>
+            
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Agência de Ônibus</title>
+
+        <link rel="stylesheet" href="estilo.css"/>
+
+    </head>
+    <body>
+        <header id="cabecalho">
+            <h1 class="titulo">Agência de Ônibus</h1>
+        </header>
+
+
+       
+
+        <div class="blocoform">
+            <h2>Contratação</h2>
+            <form action="javascript:alert('Pedido enviado :D')" id="form1" name="cadastro" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="Nome" value="Nome completo"/> <br/>
+                <label for="email">E-Mail:</label>
+                <input type="email" id="email" name="E-mail" value="exemplo@exemplo.com"/> <br/>
+                <label for="telefone">Telefone:</label>
+                <input type="text" id="telefone" name="Telefone" value="Número com DDD"/> <br/>
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="Endereço" value="Nome da rua + nº"/> <br/>
+                <label for="cargo">Cargo:</label>
+                <select id="cargo" name="Cargo">
+                    <option value="motorista">Motorista</option>
+                    <option value="guiche">Guichê</option>
+                    <option value="supervisor">Supervisor(a)</option>
+                    <option value="auxadmin">Auxiliar Administrativo</option>
+                    <option value="gerente">Gerente</option>
+                </select> <br/>
+                <input type="submit" name="Cadastrar"/>
+                <input type="reset" name="Limpar"/>
+            </form>
+        </div>
+        
+    </body>
+</html>
