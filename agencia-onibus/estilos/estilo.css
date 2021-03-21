@@ -28,6 +28,26 @@ p{
     margin-left: 10px;
     text-align: center;
 }
+a{
+    font-family: Arial;
+    font-size: 18px;
+}
+label{
+    font-family: Arial;
+    font-size: 16px;
+    margin-right: 10px;
+}
+label.linha{
+    display: inline-block;
+    width: 90%;
+}
+input{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    margin-left: 10px;
+    text-align: center;
+    width: 175px;
+}
 
 .destimg{
     width: 450px;
@@ -76,4 +96,15 @@ p{
 .infos{
     text-align: center;
     background-color: #dcc7aa;
+}
+.conteudofullscreen{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+.blocoform{
+    background-color: #dcc7aa;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-bottom: 30px;
 }
