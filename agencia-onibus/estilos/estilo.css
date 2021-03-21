@@ -1,0 +1,79 @@
+.w3-sidebar{
+    background-color: #dcc7aa;
+}
+.pagina{
+    background-color: #f7882f;
+}
+.fechar{
+    background-color: #6b7a8f;
+}
+
+h1{
+    font-family: Times;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 700;
+}
+h2{
+    font-family: Times;
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 20px;
+    text-align: center;
+}
+p{
+    font-family: Arial;
+    font-size: 16px;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.destimg{
+    width: 450px;
+    height: 300px;
+    float: left;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+.infoimg{
+    width: 300px;
+    padding-bottom: 10px;
+}
+
+.destino{
+    height: 300px;
+    background-color: #dcc7aa;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    text-align: center;
+    font-family: Arial;
+    font-size: 16px;
+}
+.conteudo{
+    width: 70%;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-right: 2px solid black;
+}
+.conteudo2{
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 350px;
+}
+.novidade{
+    text-align: center;
+    background-color: #6b7a8f;
+    color: white;
+    margin-bottom: 10px;
+}
+.infos{
+    text-align: center;
+    background-color: #dcc7aa;
+}

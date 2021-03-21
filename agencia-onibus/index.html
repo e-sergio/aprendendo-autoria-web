@@ -4,57 +4,104 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Agência de Ônibus</title>
-    <link rel="stylesheet" href="estilo.css"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-amber.css">
+    <link rel="stylesheet" href="estilos/estilo.css"/>
 </head>
 <body>
-    <h1 class="titulo">Agência de Ônibus</h1>
-
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae esse facilis voluptatibus omnis, aperiam nihil minima consectetur tempora adipisci accusamus nisi dolore. Dicta maiores odit at dolore consequuntur magnam magni?</p>
-
-
-    <div class="destino">
-        <img src="imagens/natal.jpg"/>
-
-        <h2>Natal</h2>
-        <br/>
-        <ul>
-            <li>Manhã</li>
-            <li>Tarde</li>
-            <li>Noite</li>
-            <li>Madrugada</li>
-        </ul>
-        <br/><br/>
-        <button type="button" onclick="javascript:alert('Página não disponível')">Comprar Passagem</button>    
+    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left " style="display:none" id="mySidebar">
+        <button class="w3-bar-item w3-button w3-large fechar"
+        onclick="w3_close()">FECHAR MENU &times;</button>
+        <a class="w3-bar-item w3-button pagina" href="#">Início</a>
+        <a class="w3-bar-item w3-button" href="#">Contratação</a>
+        <a class="w3-bar-item w3-button" href="#">Chamados</a>
     </div>
 
-    <div class="destino">
+    <div id="main">
+
+        <div class="w3-teal w3-theme">
+            <button class="w3-button w3-teal w3-xlarge w3-theme" onclick="w3_open()" id="openNav">&#9776;</button>
+            <div class="w3-container w3-theme">
+                <h1>AGÊNCIA DE ÔNIBUS</h1>
+            </div>
+        </div>
+
+        <script>
+            function w3_open() {
+              document.getElementById("main").style.marginLeft = "25%";
+              document.getElementById("mySidebar").style.width = "25%";
+              document.getElementById("mySidebar").style.display = "block";
+              document.getElementById("openNav").style.display = 'none';
+            }
+            function w3_close() {
+              document.getElementById("main").style.marginLeft = "0%";
+              document.getElementById("mySidebar").style.display = "none";
+              document.getElementById("openNav").style.display = "inline-block";
+            }
+        </script>
+
+        <div class="conteudo">       
+
+            <div class="destino">
+                <img class="destimg" src="imagens/natal.jpg"/>
+
+                <h2>Natal</h2>
+                <ul>
+                    <li>Manhã</li>
+                    <li>Tarde</li>
+                    <li>Noite</li>
+                    <li>Madrugada</li>
+                </ul>
+                <br/><br/>
+                <button type="button" onclick="javascript:alert('Página não disponível')">Comprar Passagem</button>    
+            </div>
+            <br/>
+            <div class="destino">
                 
-        <img src="imagens/novacruz.jpg"/>
+                <img class="destimg" src="imagens/novacruz.jpg"/>
 
-        <h2>Nova Cruz</h2>
-        <br/>
-        <ul>
-            <li>Manhã</li>
-            <li>Tarde</li>
-            <li>Noite</li>
-        </ul>
-        <br/><br/>
-        <button type="button" onclick="javascript:alert('Página não disponível')">Comprar Passagem</button>
-    </div>
+                <h2>Nova Cruz</h2>
+                <ul>
+                    <li>Manhã</li>
+                    <li>Tarde</li>
+                    <li>Noite</li>
+                </ul>
+                <br/><br/>
+                <button type="button" class="compra" onclick="javascript:alert('Página não disponível')">Comprar Passagem</button>
+            </div>
+            <br/>
+            <div class="destino">
+                <img class="destimg" src="imagens/santoantonio.jpg"/>
 
-    <div class="destino">
-        <img src="imagens/santoantonio.jpg"/>
+                <h2>Santo Antônio</h2>
+                <ul>
+                    <li>Manhã</li>
+                    <li>Tarde</li>
+                </ul>
+                <br/><br/>
+                <button type="button" onclick="javascript:alert('Página não disponível')">Comprar Passagem</button>
 
-        <h2>Santo Antônio</h2>
-        <br/>
-        <ul>
-            <li>Manhã</li>
-            <li>Tarde</li>
-        </ul>
-        <br/><br/>
-        <button type="button" onclick="javascript:alert('Página não disponível')">Comprar Passagem</button>
+            </div>
+        </div>
+        
+        <div class="conteudo2">
+            <div class="novidade">
+                <h2>Novidades!</h2>
+                <p>A <b>[Agência de Ônibus]</b> fez recentemente a aquisição de uma frota de ônibus elétricos que em breve entrarão em circulação por nossas rotas começando por Natal, somos a primeira companhia a trazer tal tipo de inovação pra a região, apoiamos a causa do meio ambiente e por isso estamos compromissados em alguns anos termos atualizado toda nossa frota.</p>
+                <br/>
+                <img class="infoimg" src="imagens/onibus-eletrico.jpg">
+            </div>
 
+            <div class="infos">
+                <h2>Funcionário do Mês!</h2>
+                <p>João Carlos [Motorista]</p>
+                <br/>
+                <img class="infoimg" src="imagens/motorista-onibus.jpeg">
+            </div>
+        </div>
+        
     </div>
     
 </body>
