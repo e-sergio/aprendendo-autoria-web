@@ -11,28 +11,56 @@
         <link rel="stylesheet" href="estilos/estilo.css"/>
     </head>
     <body>
-        
-        
-        <div class="blocoform">
-            <h2>Abertura de Chamados</h2>
-            <form action="javascript:alert('Solicitação enviada :D')" id="form2" name="cadastro" method="POST">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="Nome" value="Nome do funcionário"/> <br/>
-                <label for="assunto">Assunto:</label>
-                <input type="text" id="assunto" name="Assunto" value="Chamado para..."/> <br/>
-                <label for="categoria">Categoria:</label>
-                <select id="categoria" name="Categoria">
-                    <option value="admin">Administrativa</option>
-                    <option value="gerencia">Gerencial</option>
-                    <option value="op">Operacional</option>
-                </select> <br/>
-                <label for="desc">Descrição:</label> <br/>
-                <textarea id="desc" form="form2" name="Descrição" rows="4" cols="30">Detalhe o chamado</textarea> <br/>
-
-                <input type="submit" name="Cadastrar"/>
-                <input type="reset" name="Limpar"/>
-            </form>
+        <div class="w3-sidebar w3-bar-block w3-card w3-animate-left " style="display:none" id="mySidebar">
+            <button class="w3-bar-item w3-button w3-xlarge fechar"
+            onclick="w3_close()">FECHAR MENU &times;</button>
+            <a class="w3-bar-item w3-button" href="index.html">Início</a>
+            <a class="w3-bar-item w3-button" href="contratacao.html">Contratação</a>
+            <a class="w3-bar-item w3-button pagina" href="chamados.html">Chamados</a>
         </div>
-            
+
+        <div id="main">
+
+            <div class="w3-teal w3-theme">
+                <button class="w3-button w3-teal w3-xlarge w3-theme" onclick="w3_open()" id="openNav">&#9776;</button>
+                <div class="w3-container w3-theme">
+                    <h1>AGÊNCIA DE ÔNIBUS</h1>
+                </div>
+            </div>
+
+            <script>
+                function w3_open() {
+                  document.getElementById("main").style.marginLeft = "25%";
+                  document.getElementById("mySidebar").style.width = "25%";
+                  document.getElementById("mySidebar").style.display = "block";
+                  document.getElementById("openNav").style.display = 'none';
+                }
+                function w3_close() {
+                  document.getElementById("main").style.marginLeft = "0%";
+                  document.getElementById("mySidebar").style.display = "none";
+                  document.getElementById("openNav").style.display = "inline-block";
+                }
+            </script>
+
+            <div class="conteudofullscreen">
+
+                <div class="blocoform">
+                    <h2>Abertura de Chamados</h2>
+                    <form action="javascript:alert('Solicitação enviada :D')" id="form2" name="cadastro" method="POST">
+                        <label class="linha" for="nome">Nome</label><input type="text" id="nome" name="Nome" value="Nome do funcionário"/> <br/>
+                        <label class="linha" for="assunto">Assunto</label><input type="text" id="assunto" name="Assunto" value="Chamado para..."/> <br/>
+                        <label class="linha" for="categoria">Categoria</label><select id="categoria" name="Categoria">
+                            <option value="admin">Administrativa</option>
+                            <option value="gerencia">Gerencial</option>
+                            <option value="op">Operacional</option>
+                        </select> <br/>
+                        <label class="linha" for="desc">Descrição</label><textarea id="desc" form="form2" name="Descrição" rows="4" cols="30">Detalhe o chamado</textarea> <br/> <br/>
+
+                        <input type="submit" name="Cadastrar"/>
+                        <input type="reset" name="Limpar"/>
+                    </form>
+                </div>
+            </div>
+        </div>   
     </body>
 </html>
